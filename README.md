@@ -70,12 +70,12 @@ src/
 
 ## 🔑 Funcionalidades
 
-✅ Registro de nuevos usuarios
-✅ Inicio de sesión con email y contraseña
-✅ Cierre de sesión manual
-✅ Persistencia de sesión con **localStorage**
-✅ Expiración automática del token
-✅ Protección de rutas con **AuthGuard**
+✅ Registro de nuevos usuarios  
+✅ Inicio de sesión con email y contraseña  
+✅ Cierre de sesión manual  
+✅ Persistencia de sesión con **localStorage**  
+✅ Expiración automática del token  
+✅ Protección de rutas con **AuthGuard**  
 ✅ Notificaciones amigables con **SweetAlert2**
 
 ## 📦 Instalación
