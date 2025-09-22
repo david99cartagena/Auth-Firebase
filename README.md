@@ -15,7 +15,26 @@ Este proyecto se desarrolló con el objetivo de reforzar conceptos clave como:
 
 ## 📸 Demo
 
-🔗 **Visita la demo en línea:** [Login App Firabase en Netlify](https://astounding-kitsune-2f7d13.netlify.app)
+🔗 **Visita la demo en línea:** [Login App Firebase en Netlify](https://astounding-kitsune-2f7d13.netlify.app)
+
+- **Inicio – Crear Usuario**  
+  ![Login App Firebase Screenshot](https://raw.githubusercontent.com/david99cartagena/Auth-Firebase/refs/heads/main/media/Screenshot_1.png)
+
+- **Registro de Usuario**  
+  _(Incluye opciones de recordar usuario e ingreso si ya existe)_  
+  ![Login App Firebase Screenshot](https://raw.githubusercontent.com/david99cartagena/Auth-Firebase/refs/heads/main/media/Screenshot_2.png)
+
+- **SweetAlert2 – Pantalla de Cargando / Loading**
+  ![Login App Firebase Screenshot](https://raw.githubusercontent.com/david99cartagena/Auth-Firebase/refs/heads/main/media/Screenshot_3.png)
+
+- **Acceso a Página Autorizada**
+  ![Login App Firebase Screenshot](https://raw.githubusercontent.com/david99cartagena/Auth-Firebase/refs/heads/main/media/Screenshot_4.png)
+
+- **Firebase Authentication**
+  ![Login App Firebase Screenshot](https://raw.githubusercontent.com/david99cartagena/Auth-Firebase/refs/heads/main/media/Screenshot_5.png)
+
+- **Inicio de Sesion** _LocalStorage_
+  ![Login App Firebase Screenshot](https://raw.githubusercontent.com/david99cartagena/Auth-Firebase/refs/heads/main/media/Screenshot_6.png)
 
 ## 🚀 Tecnologías Utilizadas
 
