@@ -1,27 +1,106 @@
-# LoginApp
+# 🔐 Login App Firabase
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+Aplicación web desarrollada en **Angular 16** que implementa un sistema de autenticación con **Firebase Authentication** usando **Identity Toolkit API**.
 
-## Development server
+Permite a los usuarios **registrarse, iniciar sesión y cerrar sesión**, manteniendo la sesión activa mediante almacenamiento en **localStorage**.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este proyecto se desarrolló con el objetivo de reforzar conceptos clave como:
 
-## Code scaffolding
+- Autenticación con **Firebase Identity Toolkit**
+- Manejo de **HTTPClient y Observables**
+- Uso de **Guards para rutas protegidas**
+- Persistencia de sesión con **localStorage**
+- Programación reactiva con **RxJS**
+- Estilización con plantillas personalizadas y librerías CSS
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 📸 Demo
 
-## Build
+🔗 **Visita la demo en línea:** [Login App Firabase en Netlify](https://astounding-kitsune-2f7d13.netlify.app)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🚀 Tecnologías Utilizadas
 
-## Running unit tests
+- **Angular 16**
+- **RxJS**
+- **TypeScript**
+- **SweetAlert2** (alertas interactivas)
+- **Bootstrap / CSS personalizado**
+- **Firebase Identity Toolkit API**
+- **HTML5 / CSS3**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📁 Estructura del Proyecto
 
-## Running end-to-end tests
+```
+src/
+├── app/
+│   ├── guards/
+│   │   └── auth.guard.ts        # Protege rutas si no hay token válido
+│   ├── models/
+│   │   ├── auth-response.model.ts # Interfaz para la respuesta de login/signup
+│   │   └── usuario.model.ts       # Modelo de usuario (email, password)
+│   ├── pages/
+│   │   ├── home/                 # Vista protegida para usuarios logueados
+│   │   ├── login/                # Formulario de inicio de sesión
+│   │   └── registro/             # Formulario de creación de usuario
+│   ├── services/
+│   │   └── auth.service.ts       # Servicio para login, logout y registro
+│   ├── app-routing.module.ts     # Configuración de rutas y guards
+│   └── app.module.ts             # Módulo raíz de la aplicación
+├── assets/                       # Recursos (CSS, imágenes, fuentes, vendor)
+└── index.html                    # Archivo principal
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🔑 Funcionalidades
 
-## Further help
+✅ Registro de nuevos usuarios
+✅ Inicio de sesión con email y contraseña
+✅ Cierre de sesión manual
+✅ Persistencia de sesión con **localStorage**
+✅ Expiración automática del token
+✅ Protección de rutas con **AuthGuard**
+✅ Notificaciones amigables con **SweetAlert2**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 📦 Instalación
+
+1. Clona este repositorio:
+
+```bash
+git clone https://github.com/david99cartagena/Auth-Firebase.git
+```
+
+```bash
+cd Auth-Firebase
+```
+
+2. Instala las dependencias:
+
+```bash
+npm install
+```
+
+3. Ejecuta el servidor local:
+
+```bash
+npm start
+```
+
+```bash
+ng serve
+```
+
+La aplicación estará disponible en: `http://localhost:4200/`
+
+## ⚙️ Configuración de API
+
+Este proyecto utiliza **Firebase Identity Toolkit.**
+Debes reemplazar tu **API Key** en el archivo `auth.service.ts.`
+
+```ts
+private apikey = "TU_API_KEY_AQUI";
+```
+
+1. Ingresa a [Firebase Console](https://console.firebase.google.com/)
+2. Crea un proyecto y habilita **Authentication → Email/Password**
+3. Copia tu **API Key** de `Project Settings → General → Web API Key`
+4. Sustituye el valor en el servicio de autenticación
+
+Basado en el curso de **Fernando Herrera** – [Angular: De Cero a Experto (Edición 2018)](https://www.udemy.com/course/angular-2-fernando-herrera/)
