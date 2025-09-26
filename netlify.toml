@@ -1,5 +1,5 @@
 [build]
-  command = "ng build --configuration=production"
+  command = "ng build --configuration production --aot"
   publish = "dist/login-app"
 
 [[redirects]]
