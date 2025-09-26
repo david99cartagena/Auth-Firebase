@@ -1,4 +1,5 @@
 export const environment = {
   production: false,
-  firebaseApiKey: '' // vacío en desarrollo
+  firebaseApiKey: 'TU_API_KEY_LOCAL' 
+  // puedes dejarla aquí si quieres trabajar en localhost sin variables de entorno
 };

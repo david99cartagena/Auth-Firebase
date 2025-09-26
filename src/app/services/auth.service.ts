@@ -4,7 +4,7 @@ import { tap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { UsuarioModel } from '../models/usuario.model';
 import { AuthResponse } from '../models/auth-response.model';
-import { environment } from 'src/environments/environment.prod';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
