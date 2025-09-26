@@ -1,5 +1,5 @@
 [build]
-  command = "sed -i 's/NG_APP_FIREBASE_API_KEY/'\"$NG_APP_FIREBASE_API_KEY\"'/g' src/environments/environment.prod.ts && ng build --configuration production --aot"
+  command = "sed -i 's|NG_APP_FIREBASE_API_KEY|'$NG_APP_FIREBASE_API_KEY'|g' src/environments/environment.prod.ts && ng build --configuration production --aot"
   publish = "dist/login-app"
 
 [[redirects]]
