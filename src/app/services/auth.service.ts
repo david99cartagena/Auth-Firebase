@@ -4,13 +4,14 @@ import { tap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { UsuarioModel } from '../models/usuario.model';
 import { AuthResponse } from '../models/auth-response.model';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
   private url = 'https://identitytoolkit.googleapis.com/v1';
-  private apikey = 'AIzaSyDb_2_HkKBINbe4UcMaWyglP8M9Qmveizs';
+  private apikey = environment.firebaseApiKey;
   private returnSecureToken = true;
   userToken: string = '';
 
